@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Greeter {% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Greetings {{username}}, you are so {{compliment}}!!</h1>
+    {% if username == 'Sam' %}
+    <img src="https://media.giphy.com/media/kAbWiuvtzoG3e/giphy.gif" alt="">
+    {% elif username == 'Sammy' %}
+    <img src="https://media.giphy.com/media/HAaOTRL9HkZsk/giphy.gif" alt="">
+    {% else %}
+    <img src="https://media.giphy.com/media/tSE4rXr0kI4fK/giphy.gif" alt="">
+    {% endif %}
+</div>
+
+{% endblock %}

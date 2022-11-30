@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Greeter Form v2{% endblock %}
+{% block content %}
+
+
+<div class="card">
+  <h1>Greeter Form v2</h1>
+  <form action="/greet-2">
+    <div class="mb-3">
+      <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder=""
+        name="username">
+      <div id="nameHelp" class="form-text">What is your name?</div>
+    </div>
+    <div class="mb-3 form-check">
+      <label for="compliments">Do you want compliments?</label>
+      <input type="checkbox" class="form-check-input" name="wants_compliments" id="compliments">
+      <!-- <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!-- <form action="/greet-2">
+        <img src="https://media.giphy.com/media/noyBeNjH4nbtXV5ZLA/giphy.gif" alt="">
+        <br><input type="text" placeholder="your name" name="username">
+        <label for "compliments">Do you want compliments?</label>
+        <input id="compliments" type="checkbox" name="wants_compliments">
+        <button>Submit!</button>
+    </form> -->
+
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %} Lucky Page {% endblock %}
+{% block content %}
+
+<div class="card">
+  <h1>Your lucky number is: {{lucky_num}}</h1>
+  <p>{{msg}}</p>
+
+  {% if lucky_num == 3 %}
+  <h2>That's my lucky number too! </h2>
+  <img src="https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif" alt="">
+  {% else %}
+  <h2>{{lucky_num}} is not my lucky number </h2>
+  <img src="https://media.giphy.com/media/3oEdvc4JCV2HJa7UQ0/giphy.gif" alt="">
+  {% endif %}
+</div>
+
+{% endblock %}
